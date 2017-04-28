@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Are you a human?</title>
+    <link rel="stylesheet" href="css/app.min.css?v=1">
+    <style>
+  .box {
+      min-width:300px;
+  }
+
+  #login {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  </style>
+
+  <!-- force https -->
+  <script>
+  if (location.protocol != 'https:')
+  {
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
+  </script>
+
+  </head>
+  <body>
+    <div id="app-container">
+    </div>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/areyouhuman.min.js?v=1"></script>
+  </body>
+</html>
